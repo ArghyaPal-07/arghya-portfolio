@@ -5,6 +5,7 @@ import { Space_Grotesk } from "next/font/google";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Script from "next/script";
 import { Syne } from "next/font/google";
+import CustomCursor from "@/components/CustomCursor";
 import { GeistPixelSquare, GeistPixelGrid, GeistPixelCircle, GeistPixelTriangle, GeistPixelLine } from 'geist/font/pixel';
 import "./globals.css";
 
@@ -100,14 +101,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
 
-      <link rel="icon" href="/logo.ico" />
+      <link rel="icon" href="/logo.png" />
 
       <body className={` ${geistSans.variable} ${geistMono.variable} ${GeistPixelSquare.variable} ${spaceGrotesk.variable} ${syne.variable} antialiased`}>
         <TooltipProvider>
           {children}
         </TooltipProvider>
         <Analytics />
-        {/* <CustomCursor /> */}
+        <CustomCursor />
       </body>
     </html>
   );
