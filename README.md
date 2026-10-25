@@ -1,6 +1,6 @@
 # Arghya's Portfolio
 
-[](https://) – A personal portfolio to showcase my work and projects s as a Full Stack Developer.
+[arghya-pal.vercel.app](https://) – A personal portfolio to showcase my work and projects as a Full Stack Developer.
 
 ---
 
@@ -20,7 +20,7 @@ This is a minimal, modern, and responsive portfolio. It includes:
 
 ## Live Site
 
-Check it out: [](https://)
+Check it out: [arghya-pal.vercel.app](https://arghya-pal.vercel.app)
 
 ---
 
