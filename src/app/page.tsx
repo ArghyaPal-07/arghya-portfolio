@@ -11,6 +11,7 @@ import SkillSection from "@/components/SkillsSection/SkillsSection";
 import SectionIndicator from "@/components/SectionIndicator/SectionIndicator";
 import LoadingScreen from "@/components/InitialLoadShell";
 import GithubActivityCard from "@/components/GithubActivityCard"
+import { Analytics } from "@vercel/analytics/next"
 
 const page = () => {
   return (
@@ -48,7 +49,7 @@ const page = () => {
           </div>
         </div>
       </Container>
-
+      <Analytics />
     </LoadingScreen>
   );
 };
