@@ -38,6 +38,12 @@ const HeroSection = () => {
               <a href="https://cal.com/arghyapal07" target="_blank" rel="noopener noreferrer">
                 <RingButton text="Book a Meeting" icon={Calendar} />
               </a>
+              <RingButton
+                text="Download Resume"
+                href="/Resume/Arghya%27s%20Resume%20October%202026.pdf"
+                download="Arghya's Resume October 2026.pdf"
+                icon={<FileDown />}
+              />
               <OpenToWorkNote />
             </div>
           </div>

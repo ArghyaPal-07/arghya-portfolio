@@ -13,6 +13,7 @@ type RingButtonProps = {
   className?: string
   target?: string
   rel?: string
+  download?: boolean | string
 }
 
 const ringButtonSizeStyles: Record<
@@ -44,7 +45,7 @@ const ringButtonSizeStyles: Record<
   },
 }
 
-const RingButton = ({ text, href, icon: Icon, size = "lg" ,className, target, rel }: RingButtonProps) => {
+const RingButton = ({ text, href, icon: Icon, size = "lg" ,className, target, rel, download }: RingButtonProps) => {
   const sizeStyles = ringButtonSizeStyles[size]
 
   let iconNode = null;
@@ -80,7 +81,7 @@ const RingButton = ({ text, href, icon: Icon, size = "lg" ,className, target, re
           sizeStyles.buttonPadding
         )}
       >
-        <Link href={href} target={target} rel={rel}>{content}</Link>
+        <Link href={href} target={target} rel={rel} download={download} prefetch={download ? false : undefined}>{content}</Link>
       </Button>
     )
   }
