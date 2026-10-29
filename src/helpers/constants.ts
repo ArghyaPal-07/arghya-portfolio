@@ -42,4 +42,15 @@ export const projects: Project[] = [
       status: "live",
       projectBg:"/Project/ProjectBackground/keylilt.png"
   },
+  {
+      id: 4,
+      name: "Palma",
+      description:
+        "Interactive hand-tracking visual effects demo built with MediaPipe and browser-based webcam input, featuring animated HUD overlays and real-time gesture-driven visuals.",
+      image: "/Project/ProjectImages/palma.png",
+      link: "https://palma-effects.vercel.app",
+    github: "https://github.com/ArghyaPal-07/palma",
+      status: "live",
+      projectBg:"/Project/ProjectBackground/palma.png"
+  }
 ];

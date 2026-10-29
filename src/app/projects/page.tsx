@@ -23,7 +23,7 @@ const ProjectsPage = () => {
         "A cycle wellness app for tracking periods, moods, symptoms, and daily journals with personalized insights.",
       category: "frontend",
       technologies: ["Next JS", "React", "Tailwind CSS", "Appwrite", "Firebase"],
-      year: "2025",
+      year: "2026",
       image: "/avela.png",
       github: "ArghyaPal-07/Avela",
       live: "https://avela-tracker.vercel.app",
@@ -47,10 +47,22 @@ const ProjectsPage = () => {
         "A minimalist typing platform for practicing speed and accuracy through interactive typing tests.",
       category: "frontend",
       technologies: ["Vite", "Tailwind CSS", "Appwrite"],
-      year: "2025",
+      year: "2026",
       image: "/keylilt.png",
       github: "ArghyaPal-07/keylilt",
       live: "https://keylilt.vercel.app",
+    },
+    {
+      id: 4,
+      title: "Palma",
+      description:
+        "Interactive hand-tracking visual effects demo built with MediaPipe and browser-based webcam input, featuring animated HUD overlays and real-time gesture-driven visuals.",
+      category: "frontend",
+      technologies: ["HTML", "CSS", "MediaPipe"],
+      year: "2026",
+      image: "/palma.png",
+      github: "ArghyaPal-07/palma",
+      live: "https://palma-effects.vercel.app",
     },
   ];
 
