@@ -8,6 +8,16 @@ import { Syne } from "next/font/google";
 import CustomCursor from "@/components/CustomCursor";
 import { GeistPixelSquare, GeistPixelGrid, GeistPixelCircle, GeistPixelTriangle, GeistPixelLine } from 'geist/font/pixel';
 import "./globals.css";
+import openGraphImage from "../../public/official/opengraphh.jpg";
+
+const siteUrl = new URL("https://arghya-pal.vercel.app");
+const socialImage = {
+  url: new URL(openGraphImage.src, siteUrl).toString(),
+  width: openGraphImage.width,
+  height: openGraphImage.height,
+  type: "image/jpeg",
+  alt: "Arghya Pal — full stack developer",
+};
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +43,7 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
+  metadataBase: siteUrl,
   title: "Arghya Pal - Full Stack Developer ",
   description: "Arghya's Portfolio site.",
   icons: {
@@ -50,14 +61,7 @@ export const metadata: Metadata = {
     description: "Arghya's Portfolio site.",
     url: "https://arghya-pal.vercel.app",
     siteName: "Arghya's Portfolio site",
-    images: [
-      {
-        url: "/official/opengraphh.jpg",
-        width: 1200,
-        height: 630,
-        alt: "My OG Image",
-      },
-    ],
+    images: [socialImage],
     locale: "en_US",
     type: "website",
   },
@@ -65,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arghya's Portfolio",
     description: "This is my portfolio.",
-    images: ["/official/opengraphh.jpg"],
+    images: [socialImage],
   },
 };
 
@@ -95,7 +99,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "https://x.com/arghyapal07",
               ],
               jobTitle: "Full Stack Developer",
-              image: "/official/opengraphh.jpg",
+              image: socialImage.url,
             }),
           }}
         />
