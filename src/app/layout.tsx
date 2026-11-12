@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     siteName: "Arghya's Portfolio site",
     images: [
       {
-        url: "https:///official/opengraphh.jpg",
+        url: "/official/opengraphh.jpg",
         width: 1200,
         height: 630,
         alt: "My OG Image",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arghya's Portfolio",
     description: "This is my portfolio.",
-    images: ["https:///official/opengraphh.jpg"],
+    images: ["/official/opengraphh.jpg"],
   },
 };
 
@@ -95,7 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "https://x.com/arghyapal07",
               ],
               jobTitle: "Full Stack Developer",
-              image: "https:///opengraphh.jpg",
+              image: "/official/opengraphh.jpg",
             }),
           }}
         />
