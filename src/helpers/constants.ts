@@ -26,7 +26,7 @@ export const projects: Project[] = [
     description:
       "A multi-category e-commerce platform with product browsing, wishlists, shopping carts, and order management.",
     image: "/Project/ProjectImages/valcerenne.png",
-    link: "https://valcerenne.vercel",
+    link: "https://valcerenne.vercel.app",
     github: "https://github.com/ArghyaPal-07/valcerenne",
     status: "live",
     projectBg: "/Project/ProjectBackground/valcerenne.png",
