@@ -4,11 +4,14 @@ import React, { useState, useEffect } from "react";
 import CommandMenu from "./CommandMenu";
 import { GitHubIcon } from "@/app/icons/Githubicon";
 import { useRouter } from "next/navigation";
+import { Coffee } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+
+const BUY_ME_A_COFFEE_URL = "https://buymeacoffee.com/arghya07";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -78,6 +81,16 @@ const Navbar: React.FC = () => {
                 Projects
               </button>
 
+              <a
+                href={BUY_ME_A_COFFEE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 whitespace-nowrap rounded-lg bg-[#FFDD00] px-3 py-2 font-sans text-sm font-semibold text-[#09090B] transition-colors hover:bg-[#FFE74D] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FFDD00]"
+              >
+                <Coffee className="h-4 w-4" aria-hidden="true" />
+                Buy me a coffee
+              </a>
+
               <div className="hidden md:flex items-center gap-6">
 
                 <Tooltip>
@@ -140,6 +153,17 @@ const Navbar: React.FC = () => {
               >
                 Projects
               </button>
+
+              <a
+                href={BUY_ME_A_COFFEE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
+                className="inline-flex items-center gap-2 rounded-lg bg-[#FFDD00] px-3 py-3 font-sans text-sm font-semibold text-[#09090B] transition-colors hover:bg-[#FFE74D] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FFDD00]"
+              >
+                <Coffee className="h-4 w-4" aria-hidden="true" />
+                Buy me a coffee
+              </a>
 
               {/* <button
                 className="block w-full rounded-lg px-3 py-3 text-left font-sans font-medium text-white transition-colors hover:bg-[#1C1C1F] hover:text-gray-300"
