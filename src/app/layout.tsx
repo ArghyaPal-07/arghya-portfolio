@@ -15,7 +15,7 @@ const socialImage = {
   url: new URL(openGraphImage.src, siteUrl).toString(),
   width: openGraphImage.width,
   height: openGraphImage.height,
-  type: "image/jpeg",
+  type: "image/jpg",
   alt: "Arghya Pal — full stack developer",
 };
 
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Arghya's Portfolio",
-    description: "This is my portfolio.",
+    description: "Full-Stack Dev.",
     images: [socialImage],
   },
 };
