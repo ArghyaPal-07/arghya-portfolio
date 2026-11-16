@@ -8,16 +8,9 @@ import { Syne } from "next/font/google";
 import CustomCursor from "@/components/CustomCursor";
 import { GeistPixelSquare, GeistPixelGrid, GeistPixelCircle, GeistPixelTriangle, GeistPixelLine } from 'geist/font/pixel';
 import "./globals.css";
-import openGraphImage from "../../public/official/opengraphh.jpg";
 
 const siteUrl = new URL("https://arghya-pal.vercel.app");
-const socialImage = {
-  url: new URL(openGraphImage.src, siteUrl).toString(),
-  width: openGraphImage.width,
-  height: openGraphImage.height,
-  type: "image/jpg",
-  alt: "Arghya Pal — full stack developer",
-};
+const socialImageUrl = new URL("/opengraph-image", siteUrl).toString();
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -61,15 +54,16 @@ export const metadata: Metadata = {
     description: "Arghya's Portfolio site.",
     url: "https://arghya-pal.vercel.app",
     siteName: "Arghya's Portfolio site",
-    images: [socialImage],
     locale: "en_US",
     type: "website",
   },
   twitter: {
+    // Inherit the generated Open Graph image and its versioned URL.
     card: "summary_large_image",
+    site: "@arghyapal07",
+    creator: "@arghyapal07",
     title: "Arghya's Portfolio",
     description: "Full-Stack Dev.",
-    images: [socialImage],
   },
 };
 
@@ -99,7 +93,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "https://x.com/arghyapal07",
               ],
               jobTitle: "Full Stack Developer",
-              image: socialImage.url,
+              image: socialImageUrl,
             }),
           }}
         />
