@@ -46,5 +46,17 @@ export const projects =[
       image: "/palma.png",
       github: "ArghyaPal-07/palma",
       live: "https://palma-effects.vercel.app",
+    },
+    {
+      id: 5,
+      title: "Readmefy",
+      description:
+        "Build beautiful, professional GitHub READMEs visually with drag-and-drop blocks, live previews, AI-assisted writing, templates, and one-click GitHub publishing.",
+      category: "full-stack",
+      technologies: ["NextJS", "CSS", "TypeScript"],
+      year: "2026",
+      image: "/readmefy.png",
+      github: "ArghyaPal-07/palma",
+      live: "https://readmefy-sand.vercel.app",
     }
 ]

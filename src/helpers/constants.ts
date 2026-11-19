@@ -52,5 +52,16 @@ export const projects: Project[] = [
     github: "https://github.com/ArghyaPal-07/palma",
       status: "live",
       projectBg:"/Project/ProjectBackground/palma.png"
+  },
+    {
+      id: 5,
+      name: "Readmefy",
+      description:
+        "Build beautiful, professional GitHub READMEs visually with drag-and-drop blocks, live previews, AI-assisted writing, templates, and one-click GitHub publishing.",
+      image: "/Project/ProjectImages/readmefy.png",
+      link: "https://readmefy-sand.vercel.app",
+    github: "https://github.com/ArghyaPal-07/Readmefy",
+      status: "live",
+      projectBg:"/Project/ProjectBackground/readmefy.png"
   }
 ];

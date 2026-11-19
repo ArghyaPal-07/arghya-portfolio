@@ -64,6 +64,18 @@ const ProjectsPage = () => {
       github: "ArghyaPal-07/palma",
       live: "https://palma-effects.vercel.app",
     },
+        {
+      id: 5,
+      title: "Readmefy",
+      description:
+        "Interactive hand-tracking visual effects demo built with MediaPipe and browser-based webcam input, featuring animated HUD overlays and real-time gesture-driven visuals.",
+      category: "frontend",
+      technologies: ["HTML", "CSS", "MediaPipe"],
+      year: "2026",
+      image: "/palma.png",
+      github: "ArghyaPal-07/palma",
+      live: "https://palma-effects.vercel.app",
+    },
   ];
 
   const fetchStars = async (repo: string) => {
