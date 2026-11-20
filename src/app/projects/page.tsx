@@ -64,11 +64,11 @@ const ProjectsPage = () => {
       github: "ArghyaPal-07/palma",
       live: "https://palma-effects.vercel.app",
     },
-        {
+    {
       id: 5,
       title: "Readmefy",
       description:
-        "Interactive hand-tracking visual effects demo built with MediaPipe and browser-based webcam input, featuring animated HUD overlays and real-time gesture-driven visuals.",
+        "Build beautiful, professional GitHub READMEs visually with drag-and-drop blocks, live previews, AI-assisted writing, templates, and one-click GitHub publishing.",
       category: "frontend",
       technologies: ["HTML", "CSS", "MediaPipe"],
       year: "2026",
@@ -76,6 +76,18 @@ const ProjectsPage = () => {
       github: "ArghyaPal-07/palma",
       live: "https://palma-effects.vercel.app",
     },
+    {
+      id: 6,
+      title: "Sokoban",
+      description:
+        "A classic Sokoban puzzle game where players strategically push boxes onto designated target tiles while navigating maze-like levels.",
+      category: "frontend",
+      technologies: ["Python"],
+      year: "2026",
+      image: "/sokoban.png",
+      github: "ArghyaPal-07/sokoban",
+      live: "https://github.com/ArghyaPal-07/sokoban/releases/tag/v1.0.0",
+    }
   ];
 
   const fetchStars = async (repo: string) => {

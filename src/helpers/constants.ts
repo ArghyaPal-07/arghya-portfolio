@@ -63,5 +63,16 @@ export const projects: Project[] = [
     github: "https://github.com/ArghyaPal-07/Readmefy",
       status: "live",
       projectBg:"/Project/ProjectBackground/readmefy.png"
+  },
+  {
+      id: 6,
+      name: "Sokoban",
+      description:
+        "A classic Sokoban puzzle game where players strategically push boxes onto designated target tiles while navigating maze-like levels.",
+      image: "/Project/ProjectImages/sokoban.png",
+      link: "https://github.com/ArghyaPal-07/sokoban/releases/tag/v1.0.0",
+    github: "https://github.com/ArghyaPal-07/sokoban",
+      status: "live",
+      projectBg:"/Project/ProjectBackground/sokoban.png"
   }
 ];

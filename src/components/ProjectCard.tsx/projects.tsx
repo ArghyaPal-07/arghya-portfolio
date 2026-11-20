@@ -58,5 +58,16 @@ export const projects =[
       image: "/readmefy.png",
       github: "ArghyaPal-07/palma",
       live: "https://readmefy-sand.vercel.app",
+    },
+    {
+      id: 6,
+      title: "Sokoban",
+      description:
+        "A classic Sokoban puzzle game where players strategically push boxes onto designated target tiles while navigating maze-like levels.",
+      category: "frontend",
+      technologies: ["Python"],
+      year: "2026",
+      image: "/sokoban.png",
+      github: "ArghyaPal-07/sokoban",
     }
 ]
