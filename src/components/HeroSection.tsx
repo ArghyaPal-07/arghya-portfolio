@@ -40,8 +40,8 @@ const HeroSection = () => {
               </a>
               <RingButton
                 text="Download Resume"
-                href="/Resume/Arghya%27s%20Resume%20October%202026.pdf"
-                download="Arghya's Resume October 2026.pdf"
+                href="/Resume/Arghya%27s%20Resume%20November%202026.pdf"
+                download="Arghya's Resume.pdf"
                 icon={<FileDown />}
               />
               <OpenToWorkNote />
